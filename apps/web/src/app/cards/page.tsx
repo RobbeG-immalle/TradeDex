@@ -22,7 +22,10 @@ export default function CardsPage({
             Search the complete Pokémon TCG card database
           </p>
         </div>
-        <CardSearchBar />
+        {/* CardSearchBar uses useSearchParams — must be in Suspense */}
+        <Suspense fallback={<div className="h-12 rounded-xl bg-slate-100 dark:bg-slate-800 animate-pulse mb-6" />}>
+          <CardSearchBar />
+        </Suspense>
         <Suspense
           key={JSON.stringify(searchParams)}
           fallback={<CardSearchSkeleton />}
