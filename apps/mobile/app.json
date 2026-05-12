@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "TradeDex",
+    "slug": "tradedex",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3730a3"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tradedex.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3730a3"
+      },
+      "package": "com.tradedex.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "scheme": "tradedex",
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "extra": {
+      "supabaseUrl": "your-supabase-url",
+      "supabaseAnonKey": "your-supabase-anon-key",
+      "pokemonTcgApiKey": "your-pokemon-tcg-api-key"
+    }
+  }
+}
